@@ -14,6 +14,11 @@
 		0350722F2088F2950080DEB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0350722D2088F2950080DEB2 /* LaunchScreen.storyboard */; };
 		0350723A2088F2950080DEB2 /* final_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035072392088F2950080DEB2 /* final_projectTests.swift */; };
 		035072452088F2950080DEB2 /* final_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035072442088F2950080DEB2 /* final_projectUITests.swift */; };
+		035072532088F78A0080DEB2 /* f4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 035072522088F7890080DEB2 /* f4.jpg */; };
+		035072552088F7F90080DEB2 /* Quick farm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 035072542088F7F90080DEB2 /* Quick farm.jpg */; };
+		035072572088FC6A0080DEB2 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035072562088FC6A0080DEB2 /* registerViewController.swift */; };
+		0350725920890EF20080DEB2 /* dbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0350725820890EF20080DEB2 /* dbViewController.swift */; };
+		0350725E20891AB00080DEB2 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0350725D20891AB00080DEB2 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,12 @@
 		035072402088F2950080DEB2 /* final projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "final projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		035072442088F2950080DEB2 /* final_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = final_projectUITests.swift; sourceTree = "<group>"; };
 		035072462088F2950080DEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		035072522088F7890080DEB2 /* f4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f4.jpg; sourceTree = "<group>"; };
+		035072542088F7F90080DEB2 /* Quick farm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Quick farm.jpg"; sourceTree = "<group>"; };
+		035072562088FC6A0080DEB2 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		0350725820890EF20080DEB2 /* dbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dbViewController.swift; sourceTree = "<group>"; };
+		0350725B208918FD0080DEB2 /* project.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = project.db; sourceTree = "<group>"; };
+		0350725D20891AB00080DEB2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0350725E20891AB00080DEB2 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,7 @@
 				035072382088F2950080DEB2 /* final projectTests */,
 				035072432088F2950080DEB2 /* final projectUITests */,
 				035072222088F2950080DEB2 /* Products */,
+				0350725C20891AB00080DEB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +110,17 @@
 		035072232088F2950080DEB2 /* final project */ = {
 			isa = PBXGroup;
 			children = (
+				0350725B208918FD0080DEB2 /* project.db */,
 				035072242088F2950080DEB2 /* AppDelegate.swift */,
 				035072262088F2950080DEB2 /* ViewController.swift */,
 				035072282088F2950080DEB2 /* Main.storyboard */,
+				0350725820890EF20080DEB2 /* dbViewController.swift */,
+				035072562088FC6A0080DEB2 /* registerViewController.swift */,
 				0350722B2088F2950080DEB2 /* Assets.xcassets */,
 				0350722D2088F2950080DEB2 /* LaunchScreen.storyboard */,
 				035072302088F2950080DEB2 /* Info.plist */,
+				035072542088F7F90080DEB2 /* Quick farm.jpg */,
+				035072522088F7890080DEB2 /* f4.jpg */,
 			);
 			path = "final project";
 			sourceTree = "<group>";
@@ -123,6 +141,14 @@
 				035072462088F2950080DEB2 /* Info.plist */,
 			);
 			path = "final projectUITests";
+			sourceTree = "<group>";
+		};
+		0350725C20891AB00080DEB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0350725D20891AB00080DEB2 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0350722F2088F2950080DEB2 /* LaunchScreen.storyboard in Resources */,
+				035072552088F7F90080DEB2 /* Quick farm.jpg in Resources */,
 				0350722C2088F2950080DEB2 /* Assets.xcassets in Resources */,
 				0350722A2088F2950080DEB2 /* Main.storyboard in Resources */,
+				035072532088F78A0080DEB2 /* f4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035072572088FC6A0080DEB2 /* registerViewController.swift in Sources */,
 				035072272088F2950080DEB2 /* ViewController.swift in Sources */,
+				0350725920890EF20080DEB2 /* dbViewController.swift in Sources */,
 				035072252088F2950080DEB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
